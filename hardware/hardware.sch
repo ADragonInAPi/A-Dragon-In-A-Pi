@@ -119,7 +119,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 1400 2800 1400
 Wire Wire Line
-	2800 1500 3500 1500
+	2800 1500 3850 1500
 Wire Wire Line
 	2800 1600 3500 1600
 Text Label 3500 1500 2    60   ~ 0
@@ -282,4 +282,12 @@ $EndComp
 NoConn ~ 5250 5000
 NoConn ~ 5250 3700
 NoConn ~ 5250 2400
+Wire Wire Line
+	3750 1500 3750 4100
+Wire Wire Line
+	3750 2800 3850 2800
+Connection ~ 3750 1500
+Wire Wire Line
+	3750 4100 3850 4100
+Connection ~ 3750 2800
 $EndSCHEMATC
