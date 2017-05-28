@@ -421,17 +421,6 @@ Wire Wire Line
 Connection ~ 8750 1650
 Wire Wire Line
 	8750 2250 8750 1950
-$Comp
-L Q_NPN_BCE Q1
-U 1 1 592B0265
-P 8850 1400
-F 0 "Q1" H 8750 1600 50  0000 R CNN
-F 1 "Q_NPN_BCE" H 8750 1500 50  0000 R CNN
-F 2 "" H 9050 1500 50  0000 C CNN
-F 3 "" H 8850 1400 50  0000 C CNN
-	1    8850 1400
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	8750 1600 8750 1650
 Wire Wire Line
@@ -448,4 +437,58 @@ Text Notes 9500 1200 0    60   ~ 0
 Out to motor PWM pin
 Text Notes 700  5650 0    60   ~ 0
 SCLK/RCLK needs to be set at 300 baud, will a 555 be stable enough or will\nwe need a crystal oscillator?
+$Comp
+L PN2222A Q?
+U 1 1 592B2515
+P 8850 1400
+F 0 "Q?" H 8700 1250 50  0000 L CNN
+F 1 "PN2222A" H 8450 1550 50  0000 L CNN
+F 2 "" H 9050 1325 50  0000 L CIN
+F 3 "" H 8850 1400 50  0000 L CNN
+	1    8850 1400
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3100 850  0    60   Input ~ 0
++5
+$Comp
+L NCP1117ST20T3G U?
+U 1 1 592B388B
+P 3600 850
+F 0 "U?" H 3600 1075 50  0000 C CNN
+F 1 "NCP1117ST20T3G" H 3600 1000 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 3650 600 50  0001 L CNN
+F 3 "" H 3600 850 50  0000 C CNN
+	1    3600 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 850  3100 850 
+$Comp
+L GND #PWR?
+U 1 1 592B3959
+P 3600 1150
+F 0 "#PWR?" H 3600 900 50  0001 C CNN
+F 1 "GND" H 3600 1000 50  0000 C CNN
+F 2 "" H 3600 1150 50  0000 C CNN
+F 3 "" H 3600 1150 50  0000 C CNN
+	1    3600 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 850  6700 850 
+Wire Wire Line
+	6700 850  6700 2200
+Wire Wire Line
+	6700 2200 6450 2200
+$Comp
+L GND #PWR?
+U 1 1 592B39F2
+P 6450 2400
+F 0 "#PWR?" H 6450 2150 50  0001 C CNN
+F 1 "GND" H 6450 2250 50  0000 C CNN
+F 2 "" H 6450 2400 50  0000 C CNN
+F 3 "" H 6450 2400 50  0000 C CNN
+	1    6450 2400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
