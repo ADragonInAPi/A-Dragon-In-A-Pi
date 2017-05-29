@@ -10,14 +10,13 @@
  */
 
 int setPos(int motor, unsigned int position) {
-	// Set the motor's enable pin high
 	int motorPin = (motor == 15) ? 16 : motor;
 	int serial = serialOpen("/dev/ttyAMA0", 300);
 
 	if(serial == -1) {
 		return 1;
 	}
-
+	// Set the motor's enable pin high
 	digitalWrite(motorPin, 1);
 	serialPutchar(serial, (unsigned char) position);
 	digitalWrite(motorPin, 0);
