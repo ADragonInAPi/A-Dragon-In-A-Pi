@@ -5,8 +5,8 @@
 #ifndef LIBDPI_H
 #define LIBDPI_H
 
-#include <wiringPi.h>
 #include <errno.h>
+#include <wiringPi.h>
 #include <wiringSerial.h>
 
 int setPos(int motor, unsigned int position);
