@@ -119,7 +119,9 @@ Wire Wire Line
 Wire Wire Line
 	2900 1400 2800 1400
 Wire Wire Line
-	2800 1500 3850 1500
+	2800 1500 3750 1500
+Wire Wire Line
+	3750 1500 3850 1500
 Wire Wire Line
 	2800 1600 3500 1600
 Text Label 3500 1500 2    60   ~ 0
@@ -208,7 +210,9 @@ $EndComp
 Wire Wire Line
 	5250 2550 5250 2500
 Wire Wire Line
-	5250 2850 5650 2850
+	5250 2850 5500 2850
+Wire Wire Line
+	5500 2850 5650 2850
 Wire Wire Line
 	5650 2850 5650 2750
 Wire Wire Line
@@ -244,7 +248,9 @@ $EndComp
 Text GLabel 7350 1150 1    60   Input ~ 0
 +5
 Wire Wire Line
-	7350 1150 7350 1850
+	7350 1150 7350 1200
+Wire Wire Line
+	7350 1200 7350 1850
 Wire Wire Line
 	7350 1850 7550 1850
 Wire Wire Line
@@ -337,10 +343,14 @@ F 3 "" H 8750 1800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8650 1950 9000 1950
+	8650 1950 8750 1950
+Wire Wire Line
+	8750 1950 9000 1950
 Connection ~ 8750 1950
 Wire Wire Line
-	8550 1650 9000 1650
+	8550 1650 8750 1650
+Wire Wire Line
+	8750 1650 9000 1650
 Connection ~ 8750 1650
 Wire Wire Line
 	8750 2250 8750 1950
@@ -433,7 +443,9 @@ Connection ~ 5500 2850
 Text GLabel 950  3600 0    60   Input ~ 0
 +5
 Wire Wire Line
-	950  3600 1400 3600
+	950  3600 1300 3600
+Wire Wire Line
+	1300 3600 1400 3600
 $Comp
 L D D2
 U 1 1 592B6CAE
@@ -446,7 +458,9 @@ F 3 "" H 2600 3500 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2450 3350 2600 3350
+	2450 3350 2550 3350
+Wire Wire Line
+	2550 3350 2600 3350
 Wire Wire Line
 	2450 3350 2450 3400
 Wire Wire Line
@@ -456,7 +470,9 @@ Wire Wire Line
 Wire Wire Line
 	2500 3600 2500 3650
 Wire Wire Line
-	2500 3650 2600 3650
+	2500 3650 2550 3650
+Wire Wire Line
+	2550 3650 2600 3650
 Wire Wire Line
 	2550 3350 2550 3300
 Wire Wire Line
@@ -465,7 +481,9 @@ Connection ~ 2550 3350
 Wire Wire Line
 	2550 3650 2550 3700
 Wire Wire Line
-	2550 3700 2800 3700
+	2550 3700 2600 3700
+Wire Wire Line
+	2600 3700 2800 3700
 Connection ~ 2550 3650
 $Comp
 L C C4
@@ -516,7 +534,9 @@ F 3 "" H 2800 3100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 3250 2800 3350
+	2800 3250 2800 3300
+Wire Wire Line
+	2800 3300 2800 3350
 Connection ~ 2800 3300
 Wire Wire Line
 	2800 3700 2800 3650
@@ -556,17 +576,6 @@ Wire Wire Line
 Wire Wire Line
 	1350 3200 1400 3200
 Connection ~ 2600 3700
-$Comp
-L 74HC04 U2
-U 1 1 592B80C8
-P 1500 2600
-F 0 "U2" H 1650 2700 50  0000 C CNN
-F 1 "74HC04" H 1700 2500 50  0000 C CNN
-F 2 "" H 1500 2600 50  0000 C CNN
-F 3 "" H 1500 2600 50  0000 C CNN
-	1    1500 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1050 2600 1050 1300
 Text Notes 3100 3400 0    60   ~ 0
@@ -578,7 +587,9 @@ Wire Wire Line
 Wire Wire Line
 	2650 3200 2650 3250
 Wire Wire Line
-	2650 3250 4000 3250
+	2650 3250 3050 3250
+Wire Wire Line
+	3050 3250 4000 3250
 Wire Wire Line
 	4000 3250 4000 2400
 Wire Wire Line
@@ -597,7 +608,7 @@ F 3 "" H 3300 2650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 2600 2600 2600
+	1050 2600 2600 2600
 Wire Wire Line
 	2600 2600 2600 2550
 Wire Wire Line
@@ -632,8 +643,6 @@ F 3 "" H 3850 1300 50  0000 C CNN
 $EndComp
 Text GLabel 3850 1150 1    60   Input ~ 0
 +5
-Wire Wire Line
-	3850 1800 3850 1450
 $Comp
 L R R5
 U 1 1 592B8B33
@@ -662,4 +671,6 @@ F 3 "" H 4100 2900 50  0000 C CNN
 	1    4100 2900
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3850 1800 3850 1450
 $EndSCHEMATC
