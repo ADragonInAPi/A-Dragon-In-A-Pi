@@ -34,7 +34,7 @@ int resetmotors(void) {
 	int i;
 
 	if(wiringPiSetup() == -1) {
-		return 1;	// Fail on setup not working
+		return -1;	// Fail on setup not working
 	}
 
 	for(i = 0; i <= 14; i++) {
@@ -43,9 +43,11 @@ int resetmotors(void) {
 	pinMode(16, OUTPUT);
 
 	// Now set the motors to defaults
+	int retval;
 	for(i = 0; i <= 15; i++) {
-		setPos(i, 0);
+		// retval will be equal to the number of motors that failed to move.
+		retval = retval + setPos(i, 0);
 	}
 
-	return 0;
+	return retval;
 }
